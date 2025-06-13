@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Compra tu PC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">TECH MARKET</div>
+        <input type="text" placeholder="Buscar..." class="buscador">
+        <div class="iconos">
+            <span>👤</span>
+            <span onclick="verCarrito()">🛒</span>
+        </div>
+    </header>
+
+    <nav>
+        <button onclick="irACatalogo()">Catálogo</button>
+        <button onclick="irAArmado()">Armar tu PC</button>
+    </nav>
+
+    <section class="categorias">
+        <h2>Categorías</h2>
+        <div class="grid-categorias">
+            <div class="tarjeta"><img src="img/procesadores.jpg"><p>Procesadores</p></div>
+            <div class="tarjeta"><img src="img/notebooks.jpg"><p>Notebooks</p></div>
+            <div class="tarjeta"><img src="img/perifericos.jpg"><p>Periféricos</p></div>
+            <div class="tarjeta"><img src="img/monitores.jpg"><p>Monitores</p></div>
+            <div class="tarjeta"><img src="img/gabinetes.jpg"><p>Gabinetes</p></div>
+            <div class="tarjeta"><img src="img/fuentes.jpg"><p>Fuentes</p></div>
+            <div class="tarjeta"><img src="img/ram.jpg"><p>Memorias RAM</p></div>
+            <div class="tarjeta"><img src="img/almacenamiento.jpg"><p>Almacenamiento</p></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

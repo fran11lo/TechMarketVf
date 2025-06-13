@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Armar tu PC</title>
+    <link rel="stylesheet" href="armar.css">
+</head>
+<body>
+    <header>
+        <div class="logo">TECH MARKET</div>
+        <span onclick="verCarrito()">🛒</span>
+    </header>
+
+    <main>
+        <form>
+            <label>Procesador:</label>
+            <select id="procesador" onchange="calcularTotal()">
+                <option value="0">Seleccionar</option>
+                <option value="80000">Ryzen 5 - $120.000</option>
+                <option value="120000">Intel i5 - $140.000</option>
+                <option value="150000">Ryzen 7 - $230.000</option>
+            </select>
+
+            <label>RAM:</label>
+            <select id="ram" onchange="calcularTotal()">
+                <option value="0">Seleccionar</option>
+                <option value="25000">8GB - $25.000</option>
+                <option value="40000">16GB - $40.000</option>
+                <option value="70000">32GB - $70.000</option>
+            </select>
+
+            <label>Placa de video:</label>
+            <select id="gpu" onchange="calcularTotal()">
+                <option value="0">Sin GPU</option>
+                <option value="100000">GTX 1650 - $180.000</option>
+                <option value="200000">RTX 3060 - $320.000</option>
+            </select>
+
+            <label>Almacenamiento:</label>
+            <select id="almacenamiento" onchange="calcularTotal()">
+                <option value="0">Seleccionar</option>
+                <option value="15000">SSD 240GB - $25.000</option>
+                <option value="30000">SSD 480GB - $45.000</option>
+                <option value="50000">SSD 1TB - $70.000</option>
+            </select>
+
+            <p>Total: <span id="total">$0</span></p>
+            <label for="cupon">Cupón de descuento:</label>
+             <input type="text" id="cupon" placeholder="Ingresá tu cupón" oninput="calcularTotal()">
+            <p id="descuento-texto" style="color: green; font-weight: bold;"></p>
+
+
+            <button type="button" onclick="agregarAlCarrito()">Añadir al carrito</button>
+        </form>
+    </main>
+
+    <script src="armar.js"></script>
+</body>
+</html>
