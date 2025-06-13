@@ -9,3 +9,7 @@ function irAArmado() {
 function verCarrito() {
     alert("Todavía no hicimos esa parte.");
 }
+
+function irALogin() {
+    window.location.href = "login.html";
+}
